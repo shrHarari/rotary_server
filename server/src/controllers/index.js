@@ -8,7 +8,7 @@ const personCardController = require('./personcard')
 const eventController = require('./event')
 const messageController = require('./message')
 const menuPageController = require('./menupage')
-const shaharController = require('./shahar')
+const utilController = require('./util')
 
 module.exports = {
     roleController,
@@ -20,5 +20,5 @@ module.exports = {
     eventController,
     messageController,
     menuPageController,
-    shaharController
+    utilController
 };

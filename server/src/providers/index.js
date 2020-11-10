@@ -8,7 +8,7 @@ const personCardProvider = require('./personcard');
 const eventProvider = require('./event');
 const messageProvider = require('./message');
 const menuPageProvider = require('./menupage');
-const shaharProvider = require('./shahar');
+const utilProvider = require('./util');
 
 module.exports = {
     roleProvider,
@@ -20,5 +20,5 @@ module.exports = {
     eventProvider,
     messageProvider,
     menuPageProvider,
-    shaharProvider
+    utilProvider
 };

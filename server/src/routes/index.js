@@ -10,7 +10,7 @@ const personCardRoute = require('./personcard');
 const eventRoute = require('./event');
 const messageRoute = require('./message');
 const menuPageRoute = require('./menupage');
-const shaharRoute = require('./shahar');
+const utilRoute = require('./util');
 
 app.use('/role', roleRoute );
 app.use('/area', areaRoute );
@@ -21,6 +21,6 @@ app.use('/personcard', personCardRoute );
 app.use('/event', eventRoute );
 app.use('/message', messageRoute );
 app.use('/menupage', menuPageRoute );
-app.use('/shahar', shaharRoute );
+app.use('/util', utilRoute );
 
 module.exports = app;

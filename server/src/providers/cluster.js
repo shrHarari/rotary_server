@@ -23,7 +23,7 @@ const _getClustersListWithClubs = async () => {
 
     }
     catch(ex) {
-        console.log(`cannot get Cluster List With Clubs from db. ${ex}`);
+        console.log(`cannot get Clusters List With Clubs from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -79,7 +79,7 @@ const _createCluster = async (areaId, cluster) => {
         });
     }   
     catch(ex) {
-        console.log(`cannot create cluster in db. ${ex}`);
+        console.log(`cannot create Cluster in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -92,7 +92,7 @@ const _updateCluster = async (clusterId, cluster) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot update cluster in db. ${ex}`);
+        console.log(`cannot update Cluster in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -105,7 +105,7 @@ const _deleteCluster = async (clusterId) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot delete cluster from db. ${ex}`);
+        console.log(`cannot delete Cluster from db. ${ex}`);
         return Promise.reject();
     }
 };

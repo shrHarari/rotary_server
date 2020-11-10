@@ -9,7 +9,7 @@ const _getRolesList = async () => {
         return roles;
     }
     catch(ex) {
-        console.log(`cannot get roles from db. ${ex}`);
+        console.log(`cannot get Roles List from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -22,7 +22,7 @@ const _getRoleById = async (roleId) => {
         return role;
     }
     catch(ex) {
-        console.log(`cannot get role by id from db. ${ex}`);
+        console.log(`cannot get Role By id from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -35,7 +35,7 @@ const _getRoleByEnum = async (roleEnum) => {
         return role;
     }
     catch(ex) {
-        console.log(`cannot get role by Enum from db. ${ex}`);
+        console.log(`cannot get Role By Enum from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -48,7 +48,7 @@ const _getRoleByRoleName = async (roleName) => {
         return role;
     }
     catch(ex) {
-        console.log(`cannot get role by RoleName from db. ${ex}`);
+        console.log(`cannot get Role by RoleName from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -61,7 +61,7 @@ const _createRole = async (role) => {
         return newRole
     }
     catch(ex) {
-        console.log(`cannot create role in db. ${ex}`);
+        console.log(`cannot create Role in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -74,7 +74,7 @@ const _updateRole = async (roleId, role) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot update role in db. ${ex}`);
+        console.log(`cannot update Role in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -87,7 +87,7 @@ const _deleteRole = async (roleId) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot delete role from db. ${ex}`);
+        console.log(`cannot delete Role from db. ${ex}`);
         return Promise.reject();
     }
 };

@@ -8,7 +8,7 @@ const _getPageItemsList = async () => {
         return pageItems;
     }
     catch(ex) {
-        console.log(`cannot get PageItems from db. ${ex}`);
+        console.log(`cannot get PageItems List from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -23,7 +23,7 @@ const _getPageItemsListByPageName = async (pageName) => {
         return pageItems;
     }
     catch(ex) {
-        console.log(`cannot get PageItems By PageName from db. ${ex}`);
+        console.log(`cannot get PageItems List By PageName from db. ${ex}`);
         return Promise.reject();
     }
 };

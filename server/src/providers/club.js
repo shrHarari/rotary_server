@@ -10,7 +10,7 @@ const _getClubsList = async () => {
         return clubs;
     }
     catch(ex) {
-        console.log(`cannot get clubs from db. ${ex}`);
+        console.log(`cannot get Clubs from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -23,7 +23,7 @@ const _getClubById = async (clubId) => {
         return club;
     }
     catch(ex) {
-        console.log(`cannot get club by Id from db. ${ex}`);
+        console.log(`cannot get Club By Id from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -36,7 +36,7 @@ const _getClubByClubName = async (clubName) => {
         return club;
     }
     catch(ex) {
-        console.log(`cannot get club by ClubName from db. ${ex}`);
+        console.log(`cannot get Club By ClubName from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -55,7 +55,7 @@ const _createClub = async (clusterId, club) => {
         });
     }
     catch(ex) {
-        console.log(`cannot create club in db. ${ex}`);
+        console.log(`cannot create Club in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -68,7 +68,7 @@ const _updateClub = async (clubId, club) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot update club in db. ${ex}`);
+        console.log(`cannot update Club in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -81,7 +81,7 @@ const _deleteClub = async (clubId) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot delete club from db. ${ex}`);
+        console.log(`cannot delete Club from db. ${ex}`);
         return Promise.reject();
     }
 };

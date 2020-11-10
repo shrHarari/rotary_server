@@ -19,6 +19,11 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+// var server = http.createServer((req, res) => {
+//   // server code
+//   console.log(`${req.method} ${req.url}`);
+//   res.end('hello world!');
+// });
 
 /**
  * Listen on provided port, on all network interfaces.

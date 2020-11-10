@@ -46,7 +46,7 @@ const _createEvent = async (event) => {
         return newEvent
     }
     catch(ex) {
-        console.log(`cannot create Event from db. ${ex}`);
+        console.log(`cannot create Event in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -59,7 +59,7 @@ const _updateEvent = async (eventId, event) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot update Event to db. ${ex}`);
+        console.log(`cannot update Event in db. ${ex}`);
         return Promise.reject();
     }
 };

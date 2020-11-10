@@ -29,12 +29,13 @@ const _getMessageById = async (messageId) => {
 
 const _getMessagedByIdPopulated = async (messageId) => {
     try {
-        const message = await Message.findOne({_id: mongoose.Types.ObjectId(messageId)})
+        const message = await Message.findOne(
+            {_id: mongoose.Types.ObjectId(messageId)})
                 .populate("personCards")
         return message;
     }
     catch(ex) {
-        console.log(`cannot get message by Id Populated from db. ${ex}`);
+        console.log(`cannot get Message by Id Populated from db. ${ex}`);
         return Promise.reject();
     }
 };

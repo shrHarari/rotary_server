@@ -65,7 +65,6 @@ const _getAreaByIdWithClusters = async (areaId) => {
 
 const _createArea = async (area) => {
     try {
-        console.log(area);
         const newArea = new Area(area);
         await newArea.save();
         return newArea

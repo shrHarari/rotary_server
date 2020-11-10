@@ -67,7 +67,7 @@ const _getUsersListByQuery = async (query) => {
         return users;
     }
     catch(ex) {
-        console.log(`cannot get Users By Query from db. ${ex}`);
+        console.log(`cannot get Users List By Query from db. ${ex}`);
         return Promise.reject();
     }
 };

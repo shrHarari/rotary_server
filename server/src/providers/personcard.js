@@ -10,7 +10,7 @@ const _getPersonCardsList = async () => {
         return personCards;
     }
     catch(ex) {
-        console.log(`cannot get personCards List from db. ${ex}`);
+        console.log(`cannot get PersonCards List from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -26,7 +26,7 @@ const _getPersonCardsListPopulated = async () => {
         return personCards;
     }
     catch(ex) {
-        console.log(`cannot get personCards List Populated from db. ${ex}`);
+        console.log(`cannot get PersonCards List Populated from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -37,7 +37,7 @@ const _getPersonCardById = async (personCardId) => {
         return personCard;
     }
     catch(ex) {
-        console.log(`cannot get personCard by Id from db. ${ex}`);
+        console.log(`cannot get PersonCard By Id from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -66,7 +66,7 @@ const _getPersonCardByIdPopulated = async (personCardId) => {
         return personCard;
     }
     catch(ex) {
-        console.log(`cannot get personCard by Id Populated from db. ${ex}`);
+        console.log(`cannot get PersonCard By Id Populated from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -109,7 +109,7 @@ const _getPersonCardByIdMessagePopulated = async (personCardId) => {
         return personCard;
     }
     catch(ex) {
-        console.log(`cannot get personCard by Id Message Populated from db. ${ex}`);
+        console.log(`cannot get PersonCard By Id Message Populated from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -146,7 +146,7 @@ const _getPersonCardByIdAllPopulated = async (personCardId) => {
         return personCard;
     }
     catch(ex) {
-        console.log(`cannot get personCard by Id Message Populated from db. ${ex}`);
+        console.log(`cannot get PersonCard By Id All Populated from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -162,7 +162,7 @@ const _getPersonCardsListByName = async (firstName, lastName) => {
         return personCards;
     }
     catch(ex) {
-        console.log(`cannot get personCards List by Name from db. ${ex}`);
+        console.log(`cannot get PersonCards List By Name from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -182,7 +182,7 @@ const _getPersonCardsListByNamePopulated = async (firstName, lastName) => {
         return personCards;
     }
     catch(ex) {
-        console.log(`cannot get personCards by Name Populated from db. ${ex}`);
+        console.log(`cannot get personCards By Name Populated from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -203,7 +203,7 @@ const _getPersonCardsListByQuery = async (query) => {
         return personCards;
     }
     catch(ex) {
-        console.log(`cannot get personCards by Query from db. ${ex}`);
+        console.log(`cannot get PersonCards List By Query from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -224,7 +224,7 @@ const _getPersonCardsListByQueryPopulated = async (query) => {
         return personCards;
     }
     catch(ex) {
-        console.log(`cannot get persons by Query Populated from db. ${ex}`);
+        console.log(`cannot get PersonCards List By Query Populated from db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -296,7 +296,7 @@ const _createPersonCard = async (userId, personCard) => {
         });
     }
     catch(ex) {
-        console.log(`cannot create personCard in db. ${ex}`);
+        console.log(`cannot create PersonCard in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -312,7 +312,7 @@ const _updatePersonCard = async (personCardId, personCard) => {
         return(updatedPersonCard);
     }
     catch(ex) {
-        console.log(`cannot update personCard in db. ${ex}`);
+        console.log(`cannot update PersonCard in db. ${ex}`);
         return Promise.reject();
     }
 };
@@ -325,7 +325,7 @@ const _deletePersonCard = async (personCardId) => {
         return;
     }
     catch(ex) {
-        console.log(`cannot delete personCard from db. ${ex}`);
+        console.log(`cannot delete PersonCard from db. ${ex}`);
         return Promise.reject();
     }
 };
